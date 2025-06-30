@@ -1,0 +1,27 @@
+CRAWL SUMMARY REPORT (v6)
+=========================
+Total URLs Processed: 1
+Total URLs Discovered: 1
+Total URLs Queued: 1
+Base Domain: 
+Configuration:
+  - Console Errors: true
+  - Detailed Errors: true
+  - Broken Images: true
+  - LambdaTest: false
+
+STATUS CODE DISTRIBUTION:
+  0: 1 pages
+
+LINK TYPE DISTRIBUTION:
+  Internal Links: 1
+  External Links: 0
+
+ERROR SUMMARY (Internal Links Only):
+  Internal Pages with Console Errors: 1
+  Internal Pages with Broken Images: 1
+
+PERFORMANCE METRICS:
+  Thread Pool Size: 15
+  Request Timeout: 3000ms
+  Delay Between Requests: 1000ms
