@@ -76,8 +76,16 @@ public class ConsoleErrorLogger {
 
         /* 3️⃣  Target sitemap(s) – add/remove as needed. */
         List<String> sitemapUrls = Arrays.asList(
-                "https://www.silverfort.com/sitemap.xml"
-                // "https://example.com/another-sitemap.xml"
+            //  "https://silverfortstg.wpengine.com/sitemap.xml"
+                "https://www.a-lign.com/post-sitemap.xml",
+                "https://www.a-lign.com/page-sitemap.xml",
+                "https://www.a-lign.com/resource-sitemap.xml",
+                "https://www.a-lign.com/people-sitemap.xml",
+                "https://www.a-lign.com/service-sitemap.xml",
+                "https://www.a-lign.com/testimonials-sitemap.xml",
+                "https://www.a-lign.com/geo-location-sitemap.xml",
+                "https://www.a-lign.com/integration-type-sitemap.xml",
+                "https://www.a-lign.com/event-type-sitemap.xml"
         );
 
         /* 4️⃣  Output file paths. */
@@ -299,7 +307,6 @@ public class ConsoleErrorLogger {
         else
             return "General Console Error";
     }
-
     /**
      * Writes the populated Apache POI Workbook to disk.
      */
@@ -312,7 +319,6 @@ public class ConsoleErrorLogger {
             System.out.println("❌ Error saving Excel file: " + e.getMessage());
         }
     }
-
     /**
      * Writes the combined error list to a simple CSV file.
      */
@@ -327,7 +333,6 @@ public class ConsoleErrorLogger {
             System.out.println("❌ Error saving CSV file: " + e.getMessage());
         }
     }
-
     /**
      * Renders the error list as an HTML table with basic styling.
      */
@@ -338,7 +343,6 @@ public class ConsoleErrorLogger {
             writer.write("</head><body>");
             writer.write("<h2>Error Report</h2><table>");
             writer.write("<tr><th>Page URL</th><th>Error Type</th><th>Error Message</th></tr>");
-
             // Skip header row in records[0]
             for (int i = 1; i < records.size(); i++) {
                 String[] record = records.get(i);
@@ -348,7 +352,6 @@ public class ConsoleErrorLogger {
                 writer.write("<td>" + record[2] + "</td>");
                 writer.write("</tr>");
             }
-
             writer.write("</table></body></html>");
             System.out.println("✅ HTML report saved at: " + filePath);
         } catch (Exception e) {
@@ -356,4 +359,3 @@ public class ConsoleErrorLogger {
         }
     }
 }
-C:\Users\addweb\IDEAProjects\digibee-link\src\test\java\ConsoleErrorLogger.java
